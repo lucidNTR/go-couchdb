@@ -213,7 +213,7 @@ func (db *DB) View(ddoc, view string, result interface{}, opts Options) error {
 	if !strings.HasPrefix(ddoc, "_design/") {
 		return errors.New("couchdb.View: design doc name must start with _design/")
 	}
-	ddocName := strings.TrimPrefix(ddoc, "_design/") {
+	ddocName := strings.TrimPrefix(ddoc, "_design/")
 	path, err := optpath(opts, viewJsonKeys, db.name, "_design", ddocName, "_view", view)
 	if err != nil {
 		return err
