@@ -11,7 +11,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/fjl/go-couchdb"
+	"github.com/lucidNTR/go-couchdb"
 	"io/ioutil"
 	"mime"
 	"os"
